@@ -494,6 +494,22 @@ h1 {
     margin-right: 6px;
 }
 
+.total-price-cs-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.total-price-cs-amount {
+    font-size: 18px;
+    margin: 0 5px;
+    color: #ff8d38;
+}
+
+.best-price-cs-tag {
+    width: 60px;
+}
+
 /* footer */
 .widget_nav_menu ul li:before {
     content: none;

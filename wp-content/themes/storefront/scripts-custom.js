@@ -59,15 +59,15 @@ function rewriteCartForm() {
   jQuery('.entry-summary .price del>span').before('<span class="list-price-cs-tag">List Price:</span>');
   jQuery('.entry-summary .price ins>span').before('<span class="price-cs-tag">Price:</span>');
   jQuery('.variations_form').children().unwrap();  
-  jQuery('.entry-summary').wrapInner('<div class="entry-summary-left">');
+  jQuery('.entry-summary').wrapInner('<div class="entry-summary-left col-xs-12 col-sm-8">');
   jQuery('.entry-summary').wrapInner(toMove);
-  jQuery('.entry-summary-left').after('<div class="entry-summary-right">');
+  jQuery('.entry-summary-left').after('<div class="entry-summary-right col-xs-12 col-sm-4">');
   jQuery('.entry-summary-right').append(jQuery('.single_variation_wrap'));
   jQuery('.single_variation_wrap')
   	.before(`<div class="total-price-cs-div">
-              <span class="total-price-cs-tag">Total Price</span>
+              <span class="total-price-cs-tag">Total Price:</span>
               <span class="total-price-cs-amount"></span>
-              <img class="best-price-cs-tag"/>
+              <img class="best-price-cs-tag" src="https://www.travelerwishlist.com/wp-content/uploads/2017/08/Best-Price-Guarantee.png"/>
 			</div>`)
     .after(`<ul class="payment-desc-cs-tag">
               <li><span class="glyphicon glyphicon-globe"></span><strong>Free</strong> Worldwide Shipping</li>
