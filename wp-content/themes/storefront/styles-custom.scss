@@ -587,6 +587,19 @@ h1 {
     flex-direction: column;
 }
 
+.single-product .secondary-slider {
+    display: flex;
+}
+
+.single-product .secondary-slider-div {
+    background-color: #f6f6f6;
+    margin-right: 15px;
+}
+
+.single-product .secondary-slider-div:last-child {
+    margin-right: 0px !important;
+}
+
 /* footer */
 .widget_nav_menu ul li:before {
     content: none;
