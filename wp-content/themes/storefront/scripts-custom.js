@@ -25,6 +25,15 @@ function customProductPage() {
   countDiscount(regular_price, sale_price);
   setTotalPrice(sale_price, 1); 
   handleQuantityCart(sale_price);
+  rearrangeTabs();
+}
+
+function rearrangeTabs() {
+  jQuery('#tab-description >:not(h2)').wrapAll('<div class="tabs-body-cs">');
+  jQuery('#tab-additional_information >:not(h2)').wrapAll('<div class="tabs-body-cs">');
+  jQuery('.woocommerce-Tabs-panel>h2').wrap('<div class="tabs-header-cs">');
+  jQuery('#tab-reviews').after(jQuery('#tab-shipping-delivery'));
+  jQuery('#tab-title-reviews').after(jQuery('#tab-title-shipping-delivery'));
 }
 
 function handleQuantityCart(sale_price) {
@@ -65,7 +74,7 @@ function rewriteCartForm() {
   jQuery('.entry-summary-right').append(jQuery('.single_variation_wrap'));
   jQuery('.single_variation_wrap')
   	.before(`<div class="total-price-cs-div">
-              <span class="total-price-cs-tag">Total Price:</span>
+              <span class="total-price-cs-tag">Total Price</span>
               <span class="total-price-cs-amount"></span>
               <img class="best-price-cs-tag" src="https://www.travelerwishlist.com/wp-content/uploads/2017/08/Best-Price-Guarantee.png"/>
 			</div>`)

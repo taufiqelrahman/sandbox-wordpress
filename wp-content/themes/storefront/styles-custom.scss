@@ -325,6 +325,7 @@ h1 {
     flex-direction: column;
     font-size: 15px !important;
     margin-bottom: 0px !important;
+    margin-top: 10px !important;
 }
 
 .entry-summary .price del {
@@ -369,6 +370,7 @@ h1 {
     border-top: 1px solid #ccc;
     padding-top: 10px;
     border-bottom: 1px solid #ccc;
+    margin-top: 10px;
 }
 
 .entry-summary .variations .label {
@@ -387,6 +389,7 @@ h1 {
     margin-top: 15px !important;
     border-bottom: 1px solid #ccc;
     padding-bottom: 10px;
+    margin-bottom: 10px !important;
 }
 
 .woocommerce-product-rating .star-rating span:before {
@@ -441,7 +444,7 @@ h1 {
 }
 
 .single-product .single_variation_wrap .quantity {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     margin-right: 0px !important;
     font-weight: bold;
 }
@@ -498,6 +501,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 5px;
 }
 
 .total-price-cs-amount {
@@ -508,6 +512,79 @@ h1 {
 
 .best-price-cs-tag {
     width: 60px;
+}
+
+.product_title {
+    margin-top: 0px;
+}
+
+.single-product .woocommerce-tabs {
+    display: flex;
+    flex-direction: column;
+}
+
+.single-product .tabs {
+    display: flex;
+    flex-direction: row;
+    width: 100% !important;
+    border-top: none !important;
+    margin-bottom: 0px;
+}
+
+.single-product .tabs li:after {
+    content: none !important;
+}
+
+.single-product .tabs li {
+    padding: 0 10px;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: none !important;
+    border-right: 1px solid #ddd;
+    margin-right: 3px !important;
+    border-left: 1px solid #ddd;
+}
+
+.single-product .tabs li.active a {
+    color: white !important;
+}
+
+.single-product .tabs li.active {
+    background: #1079aa;
+}
+
+.single-product .woocommerce-Tabs-panel {
+    width: 100% !important;
+    border-top: 3px solid #1079aa;
+    // padding: 10px;
+}
+
+.tabs-header-cs {
+    background: #eaebec;
+    padding: 5px 30px;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.tabs-header-cs h2 {
+    font-weight: bold;
+}
+
+.tabs-body-cs {
+    padding: 20px 10px;
+    line-height: 22.5px;
+    font-size: 15px;
+}
+
+#tab-shipping-delivery h4 {
+    font-weight: bold;
+}
+
+.single-product div.product {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 /* footer */
@@ -668,6 +745,14 @@ footer {
 
   .single-product .summary {
     width: 75% !important;
+  }
+
+  .single-product .tabs li {
+    padding: 0 20px !important;
+  }
+
+  .single-product div.product {
+      display: block !important;
   }
   
   /* footer */
