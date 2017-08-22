@@ -8,6 +8,7 @@ jQuery(document).ready(function( $ ){
   else if (jQuery('body').hasClass('woocommerce-checkout')) {
     customCheckoutPage();
   }
+  customFooter();
 });
 let currency = jQuery('.entry-summary .price del .amount').text()[0];
 
@@ -39,7 +40,12 @@ function customCheckoutPage() {
 
 function formatReviewTab() {
   jQuery('.tabs-header-cs .woocommerce-Reviews-title span').remove();
-  let countReviews = parseInt(jQuery('.tabs-header-cs .woocommerce-Reviews-title').text().match(/\d+/g)[0]);
+  if (jQuery('.tabs-header-cs .woocommerce-Reviews-title').text().match(/\d+/g) != null) {
+    countReviews = parseInt(jQuery('.tabs-header-cs .woocommerce-Reviews-title').text().match(/\d+/g)[0]);
+  }
+  else {
+    countReviews = 0;
+  }
   jQuery('.tabs-header-cs .woocommerce-Reviews-title').text('Reviews (' + countReviews + ')');
   jQuery('#reviews .comment-form-comment textarea').attr('placeholder','Your review');
   jQuery('#reviews .comment-form-author input').attr('placeholder','Name');
@@ -52,6 +58,10 @@ function rearrangeTabs() {
   jQuery('.woocommerce-Tabs-panel h2').wrap('<div class="tabs-header-cs">');
   jQuery('#tab-reviews').after(jQuery('#tab-shipping-delivery'));
   jQuery('#tab-title-reviews').after(jQuery('#tab-title-shipping-delivery'));
+}
+
+function customFooter() {
+  jQuery('.site-info').append(jQuery('.content-copyright'));
 }
 
 function handleQuantityCart(sale_price) {

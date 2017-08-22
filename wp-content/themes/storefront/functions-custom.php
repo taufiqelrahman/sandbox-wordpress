@@ -109,8 +109,27 @@ if (! function_exists( 'storefront_footer_widgets_custom' )) {
         endfor;
     }
 }
+if (! function_exists( 'storefront_footer_site_info' )) {
+    /**
+     * Display the footer widget regions.
+     *
+     * @since  1.0.0
+     * @return void
+     */
+
+    function storefront_footer_site_info()
+    {
+        global $product;
+        ?>
+        <div class="content-copyright text-center" itemprop="streetAddress">101 California Street, Suite 2710, San Francisco, Indonesia 94111</div>
+        <div class="content-copyright text-center">www.travelerwishlist.com</div>
+        <?php
+    }
+}
+
 remove_action('storefront_footer', 'storefront_footer_widgets', 10);
 add_action('storefront_footer', 'storefront_footer_widgets_custom', 10);
+add_action('storefront_footer', 'storefront_footer_site_info', 21);
 
 
 // product page
@@ -119,7 +138,6 @@ add_action( 'woocommerce_single_product_summary', 'custom_template_single_yousav
 add_action( 'woocommerce_single_product_summary', 'custom_template_single_shipping', 16);
 add_action( 'woocommerce_after_single_product_summary', 'custom_template_single_trio_slogans', 9);
 add_action( 'woocommerce_after_single_product_summary', 'custom_template_single_tabs_shipping_delivery', 11);
-add_action( 'woocommerce_after_checkout_form', 'custom_template_payment_terms', 11);
 
 remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20);
 remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40);
@@ -256,21 +274,21 @@ if (! function_exists( 'custom_template_single_trio_slogans' )) {
 				<div class="secondary-slider hidden-xs hidden-sm panel-row-style panel-row-style-for-1133-1">
 					<div class="widget_text secondary-slider-div panel-widget-style panel-widget-style-for-1133-1-0-0">
 						<div class="textwidget custom-html-widget">
-							<img src="http://lorempixel.com/output/sports-q-c-66-66-6.jpg">
+							<img src="https://www.travelerwishlist.com/wp-content/uploads/2017/08/Delivery.png">
 							<h4 class="secondary-slider-title">Free shipping worldwide</h4>
 							<span class="secondary-slider-text">Our store operates worldwide and you can enjoy free delivery of all orders</span>
 						</div>
 					</div>
 					<div class="widget_text secondary-slider-div panel-widget-style panel-widget-style-for-1133-1-0-0">
 						<div class="textwidget custom-html-widget">
-							<img src="http://lorempixel.com/output/sports-q-c-66-66-6.jpg">
+							<img src="https://www.travelerwishlist.com/wp-content/uploads/2017/08/100-Guarantee.png">
 							<h4 class="secondary-slider-title">Money back guarantee</h4>
 							<span class="secondary-slider-text">We give your money back if ordered item(s) do not arrive within 1 month after order</span>
 						</div>
 					</div>
 					<div class="widget_text secondary-slider-div panel-widget-style panel-widget-style-for-1133-1-0-0">
 						<div class="textwidget custom-html-widget">
-							<img src="http://lorempixel.com/output/sports-q-c-66-66-6.jpg">
+							<img src="https://www.travelerwishlist.com/wp-content/uploads/2017/08/SSL-Paypal.png">
 							<h4 class="secondary-slider-title">100% secure payment</h4>
 							<span class="secondary-slider-text">Buy with confidence using the world's most popular and secure payment methods</span>
 						</div>
@@ -279,6 +297,9 @@ if (! function_exists( 'custom_template_single_trio_slogans' )) {
         <?php
     }
 }
+
+// checkout page
+add_action( 'woocommerce_after_checkout_form', 'custom_template_payment_terms', 11);
 if (! function_exists( 'custom_template_payment_terms' )) {
     /**
      * Display the footer widget regions.
@@ -309,9 +330,9 @@ if (! function_exists( 'custom_template_payment_terms' )) {
 
                     <h5>SAFE SHOPPING GUARANTEE</h5>
                     <div class="checkout-guarantee">
-                        <!--<img src="//worldofharry.com/wp-content/themes/davinci/img/trust/mcafee.svg?1000" alt="">
-                        <img src="//worldofharry.com/wp-content/themes/davinci/img/trust/norton.svg?1000" alt="">
-                        <img src="//worldofharry.com/wp-content/themes/davinci/img/trust/truste.svg?1000" alt="">-->
+                        <img src="https://www.travelerwishlist.com/wp-content/uploads/2017/08/SSL.png" alt="">
+                        <img src="https://www.travelerwishlist.com/wp-content/uploads/2017/08/Paypal.png" alt="">
+                        <!--<img src="//worldofharry.com/wp-content/themes/davinci/img/trust/truste.svg?1000" alt="">-->
                     </div>
 
                     <div class="b-sidebar_checkout-confidence__text">
