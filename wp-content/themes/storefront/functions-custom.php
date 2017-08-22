@@ -262,15 +262,15 @@ if (! function_exists( 'custom_template_single_trio_slogans' )) {
 					<div class="widget_text secondary-slider-div panel-widget-style panel-widget-style-for-1133-1-0-0">
 						<div class="textwidget custom-html-widget">
 							<img src="http://lorempixel.com/output/sports-q-c-66-66-6.jpg">
-							<h4 class="secondary-slider-title">Free shipping worldwide</h4>
-							<span class="secondary-slider-text">Our store operates worldwide and you can enjoy free delivery of all orders</span>
+							<h4 class="secondary-slider-title">Money back guarantee</h4>
+							<span class="secondary-slider-text">We give your money back if ordered item(s) do not arrive within 1 month after order</span>
 						</div>
 					</div>
 					<div class="widget_text secondary-slider-div panel-widget-style panel-widget-style-for-1133-1-0-0">
 						<div class="textwidget custom-html-widget">
 							<img src="http://lorempixel.com/output/sports-q-c-66-66-6.jpg">
-							<h4 class="secondary-slider-title">Free shipping worldwide</h4>
-							<span class="secondary-slider-text">Our store operates worldwide and you can enjoy free delivery of all orders</span>
+							<h4 class="secondary-slider-title">100% secure payment</h4>
+							<span class="secondary-slider-text">Buy with confidence using the world's most popular and secure payment methods</span>
 						</div>
 					</div>
 				</div>

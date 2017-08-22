@@ -26,12 +26,22 @@ function customProductPage() {
   setTotalPrice(sale_price, 1); 
   handleQuantityCart(sale_price);
   rearrangeTabs();
+  formatReviewTab();
+}
+
+function formatReviewTab() {
+  jQuery('.tabs-header-cs .woocommerce-Reviews-title span').remove();
+  let countReviews = parseInt(jQuery('.tabs-header-cs .woocommerce-Reviews-title').text().match(/\d+/g)[0]);
+  jQuery('.tabs-header-cs .woocommerce-Reviews-title').text('Reviews (' + countReviews + ')');
+  jQuery('#reviews .comment-form-comment textarea').attr('placeholder','Your review');
+  jQuery('#reviews .comment-form-author input').attr('placeholder','Name');
+  jQuery('#reviews .comment-form-email input').attr('placeholder','Email');
 }
 
 function rearrangeTabs() {
   jQuery('#tab-description >:not(h2)').wrapAll('<div class="tabs-body-cs">');
   jQuery('#tab-additional_information >:not(h2)').wrapAll('<div class="tabs-body-cs">');
-  jQuery('.woocommerce-Tabs-panel>h2').wrap('<div class="tabs-header-cs">');
+  jQuery('.woocommerce-Tabs-panel h2').wrap('<div class="tabs-header-cs">');
   jQuery('#tab-reviews').after(jQuery('#tab-shipping-delivery'));
   jQuery('#tab-title-reviews').after(jQuery('#tab-title-shipping-delivery'));
 }
@@ -83,6 +93,7 @@ function rewriteCartForm() {
               <li><span class="glyphicon glyphicon-check"></span><strong>100%</strong> Money Back Guarantee</li>
               <li><span class="glyphicon glyphicon-lock"></span><strong>100%</strong> Secure Payments</li>
             </ul>`);
+  jQuery('.single-product .woocommerce-product-gallery, .single-product .summary').wrapAll('<div class="row">')
 }
 
 function countDiscount(regular_price, sale_price) {  

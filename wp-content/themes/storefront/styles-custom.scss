@@ -28,6 +28,13 @@ h1 {
     background: #403f3f;
 }
 
+/*  cart */
+
+.site-header-cart .widget_shopping_cart {
+    min-width: 400px;
+    padding: 5px;
+}
+
 /* email */
 .current-user-email {
     width: 25%;
@@ -392,8 +399,12 @@ h1 {
     margin-bottom: 10px !important;
 }
 
-.woocommerce-product-rating .star-rating span:before {
+.star-rating span:before {
     color: #ff8d38 !important;
+}
+
+#comments .star-rating {
+    font-size: 16px !important;
 }
 
 .single-product .onsale {
@@ -598,6 +609,66 @@ h1 {
 
 .single-product .secondary-slider-div:last-child {
     margin-right: 0px !important;
+}
+
+#reviews .commentlist {
+    margin: 25px 10px;
+}
+
+#reviews .comment-reply-title {
+    display: block;
+}
+
+#reviews .comment-reply-title {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+#commentform .comment-form-rating label {
+    display: none;
+}
+
+#commentform .stars a:before {
+    color: #ff8d38 !important;
+}
+
+#reviews .comment-form-rating {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+#reviews .comment-form-comment label,
+#reviews .comment-form-author label,
+#reviews .comment-form-email label {
+    display: none;
+}
+
+#reviews .comment-form-comment textarea,
+#reviews .comment-form-author input,
+#reviews .comment-form-email input {
+    background: white;
+    border: 1px solid #ccc;
+}
+
+#reviews .comment-form-comment textarea::placeholder,
+#reviews .comment-form-author input::placeholder,
+#reviews .comment-form-email input::placeholder {
+    color: #bbb;
+}
+
+#commentform .comment-notes {
+    margin-bottom: 15px;
+}
+
+#respond {
+    background: none;
+}
+
+#review_form_wrapper {
+    border-top: 1px solid #ddd;
+    margin-top: 35px;
 }
 
 /* footer */
