@@ -5,6 +5,9 @@ jQuery(document).ready(function( $ ){
   else if (jQuery('body').hasClass('single-product')) {
     customProductPage();    
   }
+  else if (jQuery('body').hasClass('woocommerce-checkout')) {
+    customCheckoutPage();
+  }
 });
 let currency = jQuery('.entry-summary .price del .amount').text()[0];
 
@@ -27,6 +30,11 @@ function customProductPage() {
   handleQuantityCart(sale_price);
   rearrangeTabs();
   formatReviewTab();
+}
+
+function customCheckoutPage() {
+  jQuery('.woocommerce-checkout #main>div').addClass('col-xs-12 col-sm-9').after(jQuery('#payment-terms'));
+  jQuery('.woocommerce-checkout #main').addClass('row');
 }
 
 function formatReviewTab() {
@@ -125,8 +133,7 @@ function productSliderGridLayout() {
 }
 
 function hidePartialTopSlider() {
-  jQuery('#top-slide>div:nth-child(1)').addClass('hidden-xs hidden-sm');
-  jQuery('.b-topImg>div:nth-child(2)').addClass('hidden-xs hidden-sm');
+  jQuery('#top-slide>div:nth-child(1), .b-topImg>div:nth-child(2)').addClass('hidden-xs hidden-sm');
 }
 
 function dropdownmenuOnHome() {
