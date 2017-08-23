@@ -9,6 +9,7 @@
 
 	window.addEventListener( 'load', function() {
 		var cart = document.querySelector( '.site-header-cart' );
+		var cartDialog = document.querySelector( '.widget_shopping_cart' );
 
 		var windowHeight  = window.outerHeight,
 			cartBottomPos = cart.querySelector( '.widget_shopping_cart_content' ).getBoundingClientRect().bottom + cart.offsetHeight,
@@ -25,6 +26,11 @@
 				cartList.style.maxHeight = '15em';
 				cartList.style.overflowY = 'auto';
 			}
+      cartDialog.style.left = '-300px';
 		} );
+
+    cart.addEventListener( 'mouseout', function() {
+      cartDialog.style.left = '-999em';
+    });
 	} );
 } )();

@@ -121,7 +121,7 @@ if (! function_exists( 'storefront_footer_site_info' )) {
     {
         global $product;
         ?>
-        <div class="content-copyright text-center" itemprop="streetAddress">101 California Street, Suite 2710, San Francisco, Indonesia 94111</div>
+        <div class="content-copyright text-center" itemprop="streetAddress">Central Jakarta, Indonesia</div>
         <div class="content-copyright text-center">www.travelerwishlist.com</div>
         <?php
     }
