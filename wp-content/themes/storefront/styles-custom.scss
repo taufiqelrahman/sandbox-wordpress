@@ -933,6 +933,11 @@ footer {
       background: #292929;
   }  
 
+  .site-header .custom-logo-link img {
+        max-width: 372px !important;
+        margin-top: -30px;
+    }
+
   #site-navigation {
       width: 75%;
       margin-right: 0px;
@@ -1069,7 +1074,7 @@ footer {
   }
 
   ul.menu li.current-menu-item>a {
-      color: #d8d8d8 !important;
+      color: white !important;
   }
 }
 
