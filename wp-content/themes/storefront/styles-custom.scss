@@ -34,6 +34,7 @@ h1 {
     text-transform: uppercase;
     padding: 12px 12px !important;
     font-size: 13px;
+    font-weight: bold;
 }
 
 .storefront-primary-navigation .primary-navigation .current_page_item {
@@ -67,13 +68,13 @@ h1 {
     content: "\f072";
     font-family: FontAwesome;
     color: #ff8d38;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1em;
     // display: inline-block;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     float: left;
-    margin-right: 6px;
+    margin-right: 8px;
     margin-top: -1px;
 }
 
@@ -82,7 +83,7 @@ h1 {
     text-align: right;
     margin-bottom: 7px;
     text-transform: uppercase;
-    font-size: 11px;
+    font-size: 12px;
     font-weight: bold;
     float: right;
 }
@@ -127,9 +128,13 @@ h1 {
 /* landingpage */
 /* top-slide */
 
+.b-topImg .panel-grid-cell:nth-child(2) {
+    border-left: 5px solid white;
+}
+
 #top-slide .b-topImg__item h5 {
-    font-size: 15px;
-    margin-bottom: 20px;
+    font-size: 16px;
+    margin-bottom: 15px;
 }
 
 #top-slide .b-topImg__item h1 {
@@ -140,11 +145,11 @@ h1 {
 #top-slide .b-topImg__item img {
     object-fit: cover;
     width: 570px;
-    height: 370px;
+    height: 391px;
 }
 
 #top-slide .b-topImg__mini__item img {
-    height: 183px;
+    height: 193px;
     object-fit: cover;
     width: 315px;
 }
@@ -166,8 +171,8 @@ h1 {
 
 #slide-menu li a {
     border: 1px solid #bbb;
-    padding: 10px 15px;
-    font-size: 13px;
+    padding: 18px 15px;
+    // font-size: 13px;
     border-top: none;
     display: block;
 }
@@ -179,7 +184,7 @@ h1 {
 .b-topImg {
     padding: 15px 0;
     overflow: hidden;
-    max-height: 382px;
+    // max-height: 391px;
 }
 
 .b-topImg__item, .b-topImg__mini {
@@ -198,16 +203,16 @@ h1 {
     color: #fff;
     background: rgba(0,0,0,.5);
     position: absolute;
-    padding: 30px 34px;
+    padding: 35px 34px;
     top: 75px;
     left: 0;
     right: 0;
     border-bottom: 0;
     display: block;
     text-align: center;
-    width: 70%;
+    width: 76%;
     margin: auto;
-    height: 220px;
+    height: 228px;
 }
 
 .topImg__content {
@@ -229,14 +234,14 @@ h1 {
 .topImg__content--big .topImg__content__btn {
     color: #fff;
     display: inline-block;
-    padding: 7px 13px;
-    border-radius: 3px;
-    -webkit-border-radius: 3px;
+    padding: 3px 17px;
+    /* border-radius: 3px; */
+    /* -webkit-border-radius: 3px; */
     position: relative;
     background: #ff6e01;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 21px;
     margin-top: 5px;
 }
 
@@ -263,7 +268,8 @@ h1 {
 }
 
 .b-topImg__mini__item:first-child {
-    border-bottom: 1px solid #fff;
+    // border-bottom: 1px solid #fff;
+    margin-bottom: 5px;
 }
 
 .b-topImg__mini__item {
@@ -274,8 +280,8 @@ h1 {
 .b-topImg__mini .topImg__content__text {
     float: left;
     width: 100%;
-    padding: 10px 0;
-    font-size: 16px;
+    padding: 9px 0;
+    font-size: 19px;
     font-weight: bold;
     text-align: center;
 }
@@ -307,16 +313,31 @@ h1 {
 }
 
 .secondary-slider-div {
-    padding: 10px;
-    min-height: 185px;
+    padding: 0 10px;
+    min-height: 171px;
     display: flex;
     align-items: center;
 }
 
 .secondary-slider-div img {
     margin: auto;
-    max-height: 66px;
-    max-width: 200px;
+    // max-height: 66px;
+    // max-width: 200px;
+}
+
+.secondary-slider>div:nth-child(1) .secondary-slider-div img {
+    max-height: 54px;
+    max-width: 100px;
+}
+
+.secondary-slider>div:nth-child(2) .secondary-slider-div img {
+    max-height: 74px;
+    max-width: 108px;
+}
+
+.secondary-slider>div:nth-child(3) .secondary-slider-div img {
+    max-width: 234px;
+    max-height: 54px;
 }
 
 .secondary-slider-title {
@@ -941,12 +962,16 @@ footer {
   #site-navigation {
       width: 75%;
       margin-right: 0px;
+      padding-left: 15px;
   }
 
   .site-branding {
       margin-top: -15px !important;
   }
 
+  .woocommerce-breadcrumb {
+      margin-bottom: 15px !important;
+  }
   
   /* email */
   .current-user-email {
@@ -996,7 +1021,7 @@ footer {
   #site-header-cart .cart-contents {
       padding: 7.5px 10px;
       background: #ff8d38;
-      width: 89px;
+      width: 100px;
       display: flex;
       position: relative;
       color: white;
@@ -1006,7 +1031,7 @@ footer {
       margin-right: 0px;
   }
   #site-header-cart {
-      width: 100px !important;
+      width: 110px !important;
   }
 
   /* top-slider */

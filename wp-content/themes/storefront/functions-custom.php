@@ -51,14 +51,17 @@ if (! function_exists( 'storefront_current_user_email' )) {
      */
     function storefront_current_user_email()
     {
-        if (is_user_logged_in()) :
-            $current_user = wp_get_current_user();
+        // if (is_user_logged_in()) :
+        //     $current_user = wp_get_current_user();
         ?>
             <div class="current-user-email">
-                <span><?php echo $current_user->user_email; ?></span>
+                <span><?php 
+                    // echo $current_user->user_email; 
+                    echo get_option('admin_email');
+                ?></span>
             </div>
         <?php
-        endif;
+        // endif;
     }
 }
 

@@ -22,7 +22,7 @@
                 </div>
                 <div class="b-sidebar_checkout-confidence__top__text">
                     <span>SHOPPING ON</span>
-                    <br> www.travelerwishlist.com IS SAFE AND SECURE. GUARANTEED! </div>
+                    <br> TRAVELERWISHLIST IS SAFE AND SECURE. GUARANTEED! </div>
             </div>
 
             <div class="b-sidebar_checkout-confidence__text">You'll pay nothing if unauthorized charges are made to your credit card as a result of shopping at www.travelerwishlist.com </div>
