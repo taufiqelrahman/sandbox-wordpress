@@ -923,6 +923,26 @@ ul.products h2,
 }
 
 /* footer */
+.footer-social-media {
+    list-style: none;
+    // position: absolute;
+    right: 10%;
+    color: white;
+    display: flex;
+    margin: 20px 0 0;
+}
+
+.footer-social-media li {
+    margin: 5px;
+}
+
+.footer-social-media i {
+    font-size: 30px;
+}
+
+.footer-social-media i:hover {
+    color: orange;
+}
 
 .content-copyright:nth-child(2) {
     margin-top: 10px;
@@ -1128,6 +1148,11 @@ footer {
   }
   
   /* footer */
+  .footer-social-media {
+      position: absolute !important;
+      margin: 0 !important;
+  }
+
   .footer-widgets.col-4 .block {
       width: -webkit-fill-available !important;
       margin-right: 0px !important;

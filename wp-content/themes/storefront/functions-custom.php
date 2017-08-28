@@ -137,10 +137,30 @@ if (! function_exists( 'storefront_footer_site_info' )) {
         <?php
     }
 }
+if (! function_exists( 'storefront_footer_social_media' )) {
+    /**
+     * Display the footer widget regions.
+     *
+     * @since  1.0.0
+     * @return void
+     */
+
+    function storefront_footer_social_media()
+    {
+        ?>
+        <ul class="footer-social-media">
+            <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+        <?php
+    }
+}
 
 remove_action('storefront_footer', 'storefront_footer_widgets', 10);
 add_action('storefront_footer', 'storefront_footer_widgets_custom', 10);
 add_action('storefront_footer', 'storefront_footer_site_info', 21);
+add_action('storefront_footer', 'storefront_footer_social_media', 22);
 
 
 // product page

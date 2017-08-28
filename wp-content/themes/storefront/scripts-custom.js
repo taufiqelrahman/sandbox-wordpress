@@ -62,6 +62,7 @@ function rearrangeTabs() {
 
 function customFooter() {
   jQuery('.site-info').append(jQuery('.content-copyright'));
+  jQuery('.site-info').append(jQuery('.footer-social-media'));
 }
 
 function handleQuantityCart(sale_price) {
