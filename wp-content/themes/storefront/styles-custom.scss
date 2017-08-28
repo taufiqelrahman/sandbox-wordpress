@@ -144,14 +144,16 @@ h1 {
 
 #top-slide .b-topImg__item img {
     object-fit: cover;
-    width: 570px;
+    width: 605px;
+    // width: 570px;
     height: 391px;
 }
 
 #top-slide .b-topImg__mini__item img {
     height: 193px;
     object-fit: cover;
-    width: 315px;
+    width: 275px;
+    // width: 315px;
 }
 
 #slide-menu .dropdown-menu-right {
@@ -212,7 +214,7 @@ h1 {
     text-align: center;
     width: 76%;
     margin: auto;
-    height: 228px;
+    min-height: 228px;
 }
 
 .topImg__content {
@@ -241,7 +243,7 @@ h1 {
     background: #ff6e01;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 21px;
+    // font-size: 21px;
     margin-top: 5px;
 }
 
@@ -325,17 +327,17 @@ h1 {
     // max-width: 200px;
 }
 
-.secondary-slider>div:nth-child(1) .secondary-slider-div img {
+.secondary-slider>div:nth-child(1) img {
     max-height: 54px;
     max-width: 100px;
 }
 
-.secondary-slider>div:nth-child(2) .secondary-slider-div img {
+.secondary-slider>div:nth-child(2) img {
     max-height: 74px;
     max-width: 108px;
 }
 
-.secondary-slider>div:nth-child(3) .secondary-slider-div img {
+.secondary-slider>div:nth-child(3) img {
     max-width: 234px;
     max-height: 54px;
 }
@@ -399,6 +401,16 @@ h1 {
 }
 
 /* product page */
+.entry-summary-left .price>.amount, .entry-summary-left .price ins .amount {
+    color: #ff8d38;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.woocommerce-tabs ul.tabs li a {
+    font-size: 13px;
+}
+
 .select2OptionPicker li:first-child {
     display: none;
 }
@@ -746,6 +758,29 @@ h1 {
     margin-top: 35px;
 }
 
+/* related padding: ;roducts */
+
+ul.products ins .amount,
+ul.products .price>.amount,
+section.related.products ins .amount,
+section.related.products .price>.amount,
+ul.product_list_widget ins .amount,
+ul.product_list_widget .price>.amount {
+    font-size: 18px;
+    margin: 0 5px;
+    color: #ff8d38;
+}
+
+ul.products del .amount,
+.related.products del .amount {
+    font-size: 16px;
+}
+
+ul.products h2,
+.related.products h2 {
+    font-size: 14px !important;
+}
+
 /* checkout */
 
 #ship-to-different-address-checkbox {
@@ -1039,6 +1074,10 @@ footer {
       top: 75px !important;
       left: 30px !important;
       right: 30px !important;      
+  }
+
+  .topImg__content--big .topImg__content__btn {
+        font-size: 21px !important;
   }
 
   /* secondary-slider */
