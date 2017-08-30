@@ -156,11 +156,41 @@ if (! function_exists( 'storefront_footer_social_media' )) {
         <?php
     }
 }
+if (! function_exists( 'storefront_footer_payment_delivery_methods' )) {
+    /**
+     * Display the footer widget regions.
+     *
+     * @since  1.0.0
+     * @return void
+     */
+
+    function storefront_footer_payment_delivery_methods()
+    {
+        ?>
+        <div id="payment-delivery-methods">
+            <div class="col-full">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6">
+                        <span>Payment Methods:</span>
+                        <img src="/wp-content/uploads/2017/08/Mastercard-Logo.png"/>
+                        <img src="/wp-content/uploads/2017/08/Visa-Logo.png"/>
+                        <img class="paypal" src="/wp-content/uploads/2017/08/Paypal.png"/>
+                    </div>                
+                    <div class="col-xs-12 col-sm-6">
+                        <span>Delivery Methods:</span>
+                        <img src="/wp-content/uploads/2017/08/EMS-Logo.png"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <?php
+    }
+}
 
 remove_action('storefront_footer', 'storefront_footer_widgets', 10);
 add_action('storefront_footer', 'storefront_footer_widgets_custom', 10);
 add_action('storefront_footer', 'storefront_footer_site_info', 21);
-add_action('storefront_footer', 'storefront_footer_social_media', 22);
+add_action('storefront_before_footer', 'storefront_footer_payment_delivery_methods', 1);
 
 
 // product page
