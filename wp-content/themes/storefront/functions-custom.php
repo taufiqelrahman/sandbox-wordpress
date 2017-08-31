@@ -223,6 +223,7 @@ if (! function_exists( 'custom_template_single_yousave' )) {
         ?>
         <span class="save-cs-tag">
             <span>You save:</span>
+            <span class="discounted-price">-</span>
         </span>
         <?php
     }
