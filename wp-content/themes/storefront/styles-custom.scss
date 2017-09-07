@@ -407,6 +407,10 @@ h1 {
     font-size: 16px;
 }
 
+.woocommerce-tabs ul.tabs {
+    overflow-x: auto;
+}
+
 .woocommerce-tabs ul.tabs li a {
     font-size: 13px;
 }
@@ -461,10 +465,14 @@ h1 {
 
 .entry-summary .variations tr {
     display: flex;
-    border-top: 1px solid #ccc;
+    // border-top: 1px solid #ccc;
     padding-top: 10px;
     border-bottom: 1px solid #ccc;
     margin-top: 10px;
+}
+
+.entry-summary .variations tr:nth-child(1) {
+    border-top: 1px solid #ccc;
 }
 
 .entry-summary .variations .label {

@@ -170,7 +170,8 @@ function setQuantityInput(amount) {
 }
 
 function convertDropdownToRadio() {
-  jQuery('#color').select2OptionPicker();
+  jQuery('#color').select2OptionPicker();  
+  jQuery('#size').select2OptionPicker();
 }
 
 function addSaleSpanToProductSlider() {
