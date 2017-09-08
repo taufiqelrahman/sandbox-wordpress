@@ -796,13 +796,13 @@ ul.products h2,
     margin-left: 0px;
 }
 
-.woocommerce-checkout .entry-header {
+.entry-header, .woocommerce-products-header, .related.products>h2 {
     padding-bottom: 25px !important;
 }
 
-.woocommerce-checkout .entry-header h1 {
-    font-size: 40px;
-    text-align: left;
+.entry-header h1, .woocommerce-products-header h1, .related.products>h2 {
+    font-size: 40px !important;
+    text-align: left !important;
     margin-top: 0px;
 }
 
@@ -874,9 +874,12 @@ ul.products h2,
     text-align: center;
 }
 
+.checkout-guarantee>img:first-child {
+    height: 48px;
+}
+
 .checkout-guarantee img {
     width: 139px;
-    height: 48px;
     border: 1px solid #b9b9b9;
     margin: 4px auto;
     display: block;
@@ -951,6 +954,11 @@ ul.products h2,
     width: 42px;
     object-fit: cover;
     object-position: -30px;
+}
+
+.footer-img-paypal img {
+    height: 59.5px;
+    width: auto;
 }
 
 .footer-social-media {

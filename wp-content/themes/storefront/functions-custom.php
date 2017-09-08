@@ -174,7 +174,7 @@ if (! function_exists( 'storefront_footer_payment_delivery_methods' )) {
                         <span>Payment Methods:</span>
                         <img src="/wp-content/uploads/2017/08/Mastercard-Logo.png"/>
                         <img src="/wp-content/uploads/2017/08/Visa-Logo.png"/>
-                        <img class="paypal" src="/wp-content/uploads/2017/08/Paypal.png"/>
+                        <a href="https://www.paypal.com/webapps/mpp/paypal-popup" target="_blank"><img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_111x69.jpg" alt=""></a>
                     </div>                
                     <div class="col-xs-12 col-sm-6">
                         <span>Delivery Methods:</span>
@@ -191,6 +191,7 @@ remove_action('storefront_footer', 'storefront_footer_widgets', 10);
 add_action('storefront_footer', 'storefront_footer_widgets_custom', 10);
 add_action('storefront_footer', 'storefront_footer_site_info', 21);
 add_action('storefront_before_footer', 'storefront_footer_payment_delivery_methods', 1);
+add_action('storefront_footer', 'storefront_footer_social_media', 22);
 
 
 // product page

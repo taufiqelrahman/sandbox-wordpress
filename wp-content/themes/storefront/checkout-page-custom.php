@@ -30,7 +30,7 @@
             <h5>SAFE SHOPPING GUARANTEE</h5>
             <div class="checkout-guarantee">
                 <img src="https://www.travelerwishlist.com/wp-content/uploads/2017/08/SSL.png" alt="">
-                <img src="https://www.travelerwishlist.com/wp-content/uploads/2017/08/Paypal.png" alt="">
+                <a href="https://www.paypal.com/webapps/mpp/paypal-popup" target="_blank"><img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_111x69.jpg" alt=""></a>
                 <!--<img src="//worldofharry.com/wp-content/themes/davinci/img/trust/truste.svg?1000" alt="">-->
             </div>
 

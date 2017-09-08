@@ -85,6 +85,7 @@ function rearrangeTabs() {
 function customFooter() {
   jQuery('.site-info').append(jQuery('.content-copyright'));
   jQuery('.site-info').append(jQuery('.footer-social-media'));
+  jQuery('.footer-img-paypal a').attr('target','_blank');
 }
 
 function initQuantityCart() {
