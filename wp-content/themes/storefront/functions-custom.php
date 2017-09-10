@@ -147,13 +147,7 @@ if (! function_exists( 'storefront_footer_social_media' )) {
 
     function storefront_footer_social_media()
     {
-        ?>
-        <ul class="footer-social-media">
-            <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
-            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-        </ul>
-        <?php
+        include('footer_social_media.php');
     }
 }
 if (! function_exists( 'storefront_footer_payment_delivery_methods' )) {
@@ -165,25 +159,8 @@ if (! function_exists( 'storefront_footer_payment_delivery_methods' )) {
      */
 
     function storefront_footer_payment_delivery_methods()
-    {
-        ?>
-        <div id="payment-delivery-methods">
-            <div class="col-full">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6">
-                        <span>Payment Methods:</span>
-                        <img src="/wp-content/uploads/2017/08/Mastercard-Logo.png"/>
-                        <img src="/wp-content/uploads/2017/08/Visa-Logo.png"/>
-                        <a href="https://www.paypal.com/webapps/mpp/paypal-popup" target="_blank"><img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_111x69.jpg" alt=""></a>
-                    </div>                
-                    <div class="col-xs-12 col-sm-6">
-                        <span>Delivery Methods:</span>
-                        <img src="/wp-content/uploads/2017/08/EMS-Logo.png"/>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <?php
+    {        
+        include('footer_payment_delivery_methods.php');
     }
 }
 

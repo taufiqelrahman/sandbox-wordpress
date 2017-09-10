@@ -29,9 +29,10 @@
 
             <h5>SAFE SHOPPING GUARANTEE</h5>
             <div class="checkout-guarantee">
-                <img src="https://www.travelerwishlist.com/wp-content/uploads/2017/08/SSL.png" alt="">
-                <a href="https://www.paypal.com/webapps/mpp/paypal-popup" target="_blank"><img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_111x69.jpg" alt=""></a>
-                <!--<img src="//worldofharry.com/wp-content/themes/davinci/img/trust/truste.svg?1000" alt="">-->
+                <img src="https://www.travelerwishlist.com/wp-content/uploads/2017/08/SSL.png" alt="">  <!-- url untuk gambar SSL -->
+                <a href="https://www.paypal.com/webapps/mpp/paypal-popup" target="_blank">  <!-- url untuk link Paypal -->
+                    <img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_111x69.jpg" alt="">  <!-- url untuk gambar Paypal -->
+                </a>
             </div>
 
             <div class="b-sidebar_checkout-confidence__text">
